@@ -1,5 +1,6 @@
 void check(){ //The function responsible for checking whether or not the pattern input at record time is satisfactory, and for issuing the unlock command.
-  Serial.println("checking!");
+  #ifdef SERIAL Serial.println("checking!");
+  #endif
   delta[0] = 0;
   ref_delta[0] = 0;
   int valid = 0;
