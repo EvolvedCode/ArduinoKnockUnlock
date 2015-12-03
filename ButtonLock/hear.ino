@@ -1,4 +1,6 @@
 void hear(){
+  if(relock - 10 < millis() < relock + 10 && door) lock();
+  
   if(millis() - start > longest){
     counting = false; //If 3 seconds pass without a push, we stop counting and start over.
     current = 0;

@@ -1,9 +1,11 @@
 void setup(){
   #ifdef SERIAL Serial.begin(SERIAL);
   #endif
+  //Pin Declarations
   pinMode(pButton, INPUT_PULLUP);
-  pinMode(led, OUTPUT);
   pinMode(rButton, INPUT_PULLUP);
+  pinMode(led, OUTPUT);
+  pinMode(motor, OUTPUT);
   pinMode(buzzer, OUTPUT);
   
   delta[0] = 0;
